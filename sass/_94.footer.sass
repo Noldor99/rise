@@ -1,0 +1,73 @@
+// Footer
+.footer
+  max-width: 100%
+  background: #101C26
+  .footer__wrap
+    @include adaptivPadding(65, 25, 1)
+    padding-bottom: 25px
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    @media (max-width: $breakpoint-sm)
+      flex-direction: column
+.footer__rigt
+  .footer__description
+    padding-top: 20px
+    padding-bottom: 20px
+    color: white
+    max-width: 330px
+.footer__left
+  flex: 0 800px
+  @media (max-width: $breakpoint-sm)
+    flex: none
+.footer__menu
+  display: flex
+  justify-content: space-between
+  gap: 20px
+  flex-wrap: wrap
+  .menu__section
+    @media (max-width: $breakpoint-lg)
+      flex: 45%
+  .menu__title
+    text-wrap: nowrap
+    font-weight: 600
+    color: #F5F5F5
+    margin-bottom: 10px
+
+  .menu__list
+    list-style: none
+    padding: 0
+    margin: 0
+  li
+    margin-bottom: 5px
+    font-size: var(--text-sm1)
+    font-weight: 400
+    display: flex
+    align-items: center
+    gap: 10px
+    a
+      margin: 5px
+      color: #B3B3B3
+      text-decoration: none
+      &:hover
+        color: #b2f0f8
+        text-decoration: underline
+    .menu__img-wrap
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 16px
+      img
+        max-width: 100%
+        max-height: 100%
+
+.footer__icon
+  display: flex
+  column-gap: 18px
+  svg
+    .icon-color
+      transition: all 5s ease
+    &:hover
+      .icon-color
+        fill: #cc1515
+        transition: all 0.3s ease

@@ -1,0 +1,134 @@
+.btn_black-outline
+  padding: 13px 32px
+  border: 1px solid #cecece
+  border-radius: 100px
+  background: none
+  color: #cecece
+  &:hover
+    color: $orange
+
+.btn_orange-fill
+  padding: 13px 32px
+  background: #f0e714
+  border-radius: 100px
+  &:hover
+    color: $orange
+
+.btn__svg-orange
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 10px
+  padding: 13px 32px
+
+  line-height: 133%
+  background: #f0e714
+  border-radius: 100px
+  white-space: nowrap
+  transition: background 0.3s ease
+  &:hover
+    background: #2359ab
+    svg
+      transform: translateX(5px)
+      transition: transform 0.3s ease
+      path
+  svg
+    transition: transform 0.3s ease
+  svg path
+    transition: fill 0.3s ease
+
+.btn_light-fill
+  padding: 10px 16px
+  background: rgba(240, 231, 20, 0.2)
+  border-radius: 100px
+  text-transform: uppercase
+  &:hover
+    color: $orange
+
+.btn__svg-black
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 10px
+  padding: 13px 32px
+  color: #F0E714
+  line-height: 133%
+  background: #24272E
+  border-radius: 100px
+  white-space: nowrap
+  transition: background 0.3s ease
+  &:hover
+    background: #2359ab
+    svg
+      transform: translateX(5px)
+      transition: transform 0.3s ease
+      path
+  svg
+    transition: transform 0.3s ease
+  svg path
+    transition: fill 0.3s ease
+
+.link
+  color: black
+  &:hover
+    color: red
+
+.link-svg
+  color: black
+
+  gap: 10px
+  &:hover
+    color: red
+    svg
+      transform: translateX(5px)
+      transition: transform 0.3s ease
+      path
+        fill: red
+  svg
+    margin-left: 10px
+    transition: transform 0.3s ease
+  svg path
+    transition: fill 0.3s ease
+
+///
+.input-outline
+  position: relative
+  width: 100%
+
+  label
+    color: #8d8d8d
+    font-size: 12px
+    font-weight: 500
+    line-height: 20px
+    position: absolute
+    top: 0
+    left: 0
+
+    pointer-events: none
+    transition: color 0.3s, font-size 0.3s, transform 0.3s
+
+  input
+    width: 100%
+    border: none
+    border-bottom: 1px solid #8d8d8d
+    outline: none
+    font-size: 12px
+    font-weight: 500
+    line-height: 20px
+    color: #000
+    transition: color 0.3s, font-size 0.3s
+    padding-bottom: 10px
+    padding-top: 5px
+
+    &:focus
+      border-bottom: 1px solid #000000
+
+    &:focus ~ .inputLabel
+      color: #000
+      font-size: 14px
+      transform: translateY(-120%)
+
+  span
+    font-size: 12px
+    padding: 3px
+    color: red
